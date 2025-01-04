@@ -16,14 +16,14 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2020 - 2023"
+            date="2020 - 2024"
             iconStyle={{ background: '#039cfa', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Internal Team</h3>
+            <h3 className="vertical-timeline-element-title">Core Team</h3>
             <h4 className="vertical-timeline-element-subtitle">Auto Sultan Capital</h4>
             <p>
-              Research & Development, Market Analyst, Marketing Agency & Community
+              R&D, Market Analyst, Venture & Community
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
