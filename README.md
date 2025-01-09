@@ -21,4 +21,4 @@
 2. Copy & upload build file
 3. Change site unique name
 4. Access your deployed app
-> After successfully deploying, you can access your app at [Example](https://hnfdm.netlify.app/)
+> After successfully deploying, you can access your app at [Netlify](https://hnfdm.netlify.app/) or [Arlink](https://react-portfofio-1-1_arlink.arweave.net/)
