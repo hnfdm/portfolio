@@ -1,8 +1,8 @@
 {
-  "name": "react-portfolio-1.0",
-  "version": "1.0",
+  "name": "portfolio",
+  "version": "1.3",
   "private": true,
-  "homepage": "hnfdm_arlink.arweave.net",
+  "homepage": "",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
