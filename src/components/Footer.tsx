@@ -10,7 +10,7 @@ function Footer() {
       <div>
         <a href="https://github.com/hnfdm" target="_blank" rel="noreferrer"><GitHubIcon/></a>
         <a href="https://www.linkedin.com/in/hanifdamarjati20/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-		<a href="mailto:hanif.damarjati20@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+		    <a href="mailto:hanif.damarjati20@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
       </div>
       <p>Portfolio redesigned & rebuilt by Hanif Damarjati with ♡</p>
     </footer>

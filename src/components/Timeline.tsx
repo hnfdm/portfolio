@@ -23,7 +23,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Core Team</h3>
             <h4 className="vertical-timeline-element-subtitle">Auto Sultan Capital</h4>
             <p>
-              R&D, Market Analyst, Venture & Community
+              R&D, Analyst, Community, Bot & Web Dev
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

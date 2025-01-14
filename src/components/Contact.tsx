@@ -69,13 +69,14 @@ function Contact() {
                 label="Name"
                 placeholder="What's your name?"
                 value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => {setName(e.target.value);}}
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
 				//InputLabelProps={style:{color: '#fff'}}
 				//sx={{input:{color:"pink"},style:{color:"pink"}}} 
+        sx={{
+          color: 'black',             // Warna teks
+        }}
               />
               <TextField
                 required
