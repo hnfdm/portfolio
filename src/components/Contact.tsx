@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
-import SendIcon from '@mui/icons-material/Send';
+import emailjs from '@emailjs/browser';
+// import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 
 function Contact() {
@@ -21,17 +21,15 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS 
-
     if (name !== '' && email !== '' && message !== '') {
       var templateParams = {
-        name: name,
-        email: email,
+        user_name: name,
+        user_email: email,
         message: message
       };
 
       console.log(templateParams);
-      emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
+      emailjs.send('service_nkfr5tq', 'template_0i2dg7md', templateParams, 'EMzbe1V59LIwCCCR0').then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },
@@ -42,7 +40,7 @@ function Contact() {
       setName('');
       setEmail('');
       setMessage('');
-    } */
+    } 
   };
 
   return (
