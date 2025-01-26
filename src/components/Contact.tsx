@@ -6,25 +6,25 @@ import TextField from '@mui/material/TextField';
 
 function Contact() {
 
-  const [user_name, setName] = useState<string>('');
-  const [user_email, setEmail] = useState<string>('');
+  const [from_name, setName] = useState<string>('');
+  const [reply_to, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
 
-  const [user_nameError, setNameError] = useState<boolean>(false);
-  const [user_emailError, setEmailError] = useState<boolean>(false);
+  const [from_nameError, setNameError] = useState<boolean>(false);
+  const [reply_toError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    setNameError(user_name === '');
-    setEmailError(user_email === '');
+    setNameError(from_name === '');
+    setEmailError(reply_to === '');
     setMessageError(message === '');
 
-    if (user_name !== '' && user_email !== '' && message !== '') {
+    if (from_name !== '' && reply_to !== '' && message !== '') {
       var templateParams = {
-        user_name: user_name,
-        user_email: user_email,
+        from_name: from_name,
+        reply_to: reply_to,
         message: message
       };
 
@@ -55,10 +55,10 @@ function Contact() {
                 id="outlined-required"
                 label="Name"
                 placeholder="What's your name?"
-                value={user_name}
+                value={from_name}
                 onChange={(e) => {setName(e.target.value);}}
-                error={user_nameError}
-                helperText={user_nameError ? "Please enter your name" : ""}
+                error={from_nameError}
+                helperText={from_nameError ? "Please enter your name" : ""}
                 sx={{
                   textarea: {
                     color: 'black', // Pastikan teks terlihat
@@ -73,12 +73,12 @@ function Contact() {
                 id="outlined-required"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
-                value={user_email}
+                value={reply_to}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                error={user_emailError}
-                helperText={user_emailError ? "Please enter your email or phone number" : ""}
+                error={reply_toError}
+                helperText={reply_toError ? "Please enter your email or phone number" : ""}
                 sx={{
                   textarea: {
                     color: 'black', // Pastikan teks terlihat
