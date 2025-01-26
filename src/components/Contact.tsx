@@ -6,25 +6,25 @@ import TextField from '@mui/material/TextField';
 
 function Contact() {
 
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
+  const [user_name, setName] = useState<string>('');
+  const [user_email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
 
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
+  const [user_nameError, setNameError] = useState<boolean>(false);
+  const [user_emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    setNameError(name === '');
-    setEmailError(email === '');
+    setNameError(user_name === '');
+    setEmailError(user_email === '');
     setMessageError(message === '');
 
-    if (name !== '' && email !== '' && message !== '') {
+    if (user_name !== '' && user_email !== '' && message !== '') {
       var templateParams = {
-        user_name: name,
-        user_email: email,
+        user_name: user_name,
+        user_email: user_email,
         message: message
       };
 
@@ -55,10 +55,10 @@ function Contact() {
                 id="outlined-required"
                 label="Name"
                 placeholder="What's your name?"
-                value={name}
+                value={user_name}
                 onChange={(e) => {setName(e.target.value);}}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
+                error={user_nameError}
+                helperText={user_nameError ? "Please enter your name" : ""}
                 sx={{
                   textarea: {
                     color: 'black', // Pastikan teks terlihat
@@ -73,12 +73,12 @@ function Contact() {
                 id="outlined-required"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
-                value={email}
+                value={user_email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
+                error={user_emailError}
+                helperText={user_emailError ? "Please enter your email or phone number" : ""}
                 sx={{
                   textarea: {
                     color: 'black', // Pastikan teks terlihat
