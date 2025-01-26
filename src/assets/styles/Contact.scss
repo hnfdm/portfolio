@@ -5,27 +5,27 @@
 }
 
 .contact-form {
+  //display: flex;
+  //padding-top: 20px;
+  //justify-content: center;
+
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-direction: column; /* Susun elemen secara vertikal */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  justify-content: center; /* Pusatkan elemen secara vertikal */
   padding-top: 20px;
-
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #2596be;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
-  }
+  gap: 15px; /* Tambahkan jarak antar elemen */
 }
 
+.contact-form fieldset {
+    border: 1px solid #ffffff;
+    background-color: white;
+}
+
+
 label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-size: 1em;
+  //font-family: 'DomaineDispNar-Medium', sans-serif;
 }
 
 .form-flex {
@@ -37,6 +37,7 @@ label {
 
 .form-flex .MuiFormControl-root {
   width: 100%;
+  position: relative;
 }
 
 form {
@@ -48,14 +49,42 @@ form {
   margin-bottom: 15px !important;
 }
 
-.form-flex .MuiOutlinedInput-root {
-  color: #2e2e2e;
-}
-
-.form-flex .MuiInputBase-root {
-  color: #2e2e2e;
-}
-
 .form-flex .MuiInputBase-input {
-  color: #2e2e2e;
+  color: rgb(0, 0, 0);
+}
+
+.MuiInputLabel-root {
+  color: #dcdcdf !important; /* Warna label */
+}
+
+::placeholder {
+  color: #dcdcdf !important; /* Warna placeholder */
+  opacity: 1 !important;
+}
+
+.button-container {
+  text-align: center; /* Memastikan konten di tengah secara horizontal */
+  padding: 20px; /* Opsional: Menambah jarak */
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Warna putih untuk tombol */
+  color: #0d1116; /* Warna hitam untuk teks */
+  border: 1px solid #dcdcdf; /* Garis pinggir hitam */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-size: 1rem; /* Ukuran font */
+  font-weight: bold; /* Teks lebih tebal */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #2596be; /* Warna hitam saat hover */
+  color: #ffffff; /* Warna putih untuk teks saat hover */
+  border: 1px solid #2596be;
 }
