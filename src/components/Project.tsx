@@ -8,6 +8,12 @@ import mock19 from '../assets/images/mock19.png';
 import mock20 from '../assets/images/mock20.png';
 import mock23 from '../assets/images/mock23.png';
 import mock24 from '../assets/images/mock24.png';
+
+import ascrain from '../assets/images/ascrain.png';
+import ascapp from '../assets/images/ascapp.png';
+import ascwgen from '../assets/images/ascwgen.png';
+import ascofc from '../assets/images/ascofc.png';
+
 import '../assets/styles/Project.scss';
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
@@ -16,6 +22,26 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+            <div className="project">
+                <a target="_blank" rel="noreferrer"><img src={ascofc} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.airdropasc.com/" target="_blank" rel="noreferrer"><h2>Airdrop ASC Official Website</h2></a>
+                <p>Designed, developed, and launched a Offical Website of Airdrop ASC. This project leveraged by React, Vercel & Namecheap.</p>
+            </div>
+            <div className="project">
+                <a target="_blank" rel="noreferrer"><img src={ascwgen} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://ascwallet_ascairdropasc.ar.io/" target="_blank" rel="noreferrer"><h2>Crypto Wallet Generator</h2></a>
+                <p>Designed, developed, and launched a Crypto Wallet Generator for Generate Private Key of Ethereum & Solana. This project leveraged by Vite, React & TypeScript</p>
+            </div>
+            <div className="project">
+                <a target="_blank" rel="noreferrer"><img src={ascapp} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://ascapp_ascairdropasc.ar.io/" target="_blank" rel="noreferrer"><h2>Top 100 Crypto Market Cap</h2></a>
+                <p>Designed, developed, and launched a Crypto App for Displaying Top 100 Crypto Market Cap using Coingecko API. This project leveraged by React, Axios, Bootstrap & SweetAlert2.</p>
+            </div>
+            <div className="project">
+                <a target="_blank" rel="noreferrer"><img src={ascrain} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://asc_ascairdropasc.ar.io/" target="_blank" rel="noreferrer"><h2>Simple Raindrop Landing Page</h2></a>
+                <p>Build for Test Deployment on Arlink using ARIO Domain Name System by AO. This project leveraged by Vue 3 & Vite.</p>
+            </div>
             <div className="project">
                 <a target="_blank" rel="noreferrer"><img src={mock24} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/hnfdm/surya-rent-car-web" target="_blank" rel="noreferrer"><h2>Surya Rent Car</h2></a>
